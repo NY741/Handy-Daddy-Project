@@ -1,20 +1,29 @@
 <template>
-
-<router-view></router-view>
+  <the-header></the-header>
+  <main-content>
+    <router-view></router-view>
+  </main-content>
+  <the-footer></the-footer>
 </template>
 
 <script>
+import MainContent from "./components/UI/MainContent.vue";
+import TheFooter from "./components/UI/TheFooter.vue";
+import TheHeader from "./components/UI/TheHeader.vue";
 
 export default {
-  name: 'App',
   components: {
-  }
-}
+    TheHeader,
+    MainContent,
+    TheFooter,
+  },
+};
 </script>
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -22,28 +31,12 @@ export default {
 
 html {
   /* font-family: "Roboto", sans-serif; */
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Work Sans", sans-serif;
 }
 
 body {
   margin: 0;
-}
-
-h1 {
-  /* margin-top: 0;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  color: #033;
-  text-align: center;
-  letter-spacing: 1px;
-  word-spacing: 5px;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 5px #999; */
-}
-
-h2 {
-  /* font-size: 1.2rem;
-  margin-bottom: 0.7rem; */
 }
 
 ul {
