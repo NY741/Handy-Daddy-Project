@@ -149,7 +149,9 @@
         Agreement.”
       </b>
     </p>
-    <base-button mode="white" link to="/">Back</base-button>
+    <div class="centered margined">
+      <base-button mode="white" link to="/">Back</base-button>
+    </div>
   </base-margined-block>
 </template>
 

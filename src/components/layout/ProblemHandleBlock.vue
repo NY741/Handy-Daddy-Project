@@ -26,7 +26,7 @@ section {
   padding: 37px 80px;
   height: 177px;
   width: 100%;
-  margin: 100px 0;
+  margin: 60px 0 100px 0;
   color: var(--black-color);
   background-color: var(--main-color);
 }
