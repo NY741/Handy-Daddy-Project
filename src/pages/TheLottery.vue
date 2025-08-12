@@ -18,8 +18,8 @@ export default {
   data() {
     return {
       titleData: [
-        { text: "Home", isHighlighted: false },
-        { text: "Appliances", isHighlighted: true },
+        { text: "Privacy", isHighlighted: true },
+        { text: "Policy", isHighlighted: false },
       ],
     };
   },

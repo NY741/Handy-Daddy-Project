@@ -9,7 +9,9 @@
         <li><router-link to="#" title="">Appliances</router-link></li>
         <li><router-link to="#" title="">Blog</router-link></li>
         <li><router-link to="#" title="">Contact</router-link></li>
-        <li class="special-list-item"><router-link to="#" title="">Join us</router-link></li>
+        <li class="special-list-item">
+          <router-link to="#" title="">Join us</router-link>
+        </li>
       </ul>
     </nav>
   </header>
@@ -24,7 +26,7 @@ header {
   position: relative;
   height: 101px;
   padding: 30px 160px;
-  border: 1px solid #000;
+  border-bottom: 1px solid var(--main-color);
   color: #fff;
   background-color: #000;
 }
@@ -60,6 +62,7 @@ header {
   position: absolute;
   left: 113px;
   bottom: -40%;
+  z-index: 999;
   width: 133px;
   height: 109px;
 }

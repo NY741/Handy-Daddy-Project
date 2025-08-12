@@ -18,6 +18,5 @@ export default {
 <style scoped>
 main {
   min-height: 400px;
-  border: 1px solid #ffd700;
 }
 </style>

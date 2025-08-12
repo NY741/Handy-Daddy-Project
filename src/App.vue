@@ -1,9 +1,11 @@
 <template>
-  <the-header></the-header>
-  <main-content>
-    <router-view></router-view>
-  </main-content>
-  <the-footer></the-footer>
+  <div class="container">
+    <the-header></the-header>
+    <main-content>
+      <router-view></router-view>
+    </main-content>
+    <the-footer></the-footer>
+  </div>
 </template>
 
 <script>
@@ -32,7 +34,8 @@ export default {
   --black-color: #000;
   --dark-color-1: #231f20;
   --dark-color-2: #282828;
-  --dark-color-3: #4f4f4f;
+  --dark-color-3: #343434;
+  --dark-color-4: #4f4f4f;
   --grey-color-1: #c4c4c4;
 }
 
@@ -48,7 +51,27 @@ html {
 
 body {
   margin: 0;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 1px solid var(--black-color);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -2%;
 }
 
 ul {

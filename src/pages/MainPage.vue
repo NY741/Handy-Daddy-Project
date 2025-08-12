@@ -1,7 +1,7 @@
 <template>
   <background-with-title
     :titles="titleData"
-    height="narrow"
+    height="wide"
     buttons
     imageOrder="0"
   >
@@ -18,8 +18,8 @@ export default {
   data() {
     return {
       titleData: [
-        { text: "Home", isHighlighted: false },
-        { text: "Appliances", isHighlighted: true },
+        { text: "We'll", isHighlighted: false },
+        { text: "Fix it", isHighlighted: true },
       ],
     };
   },

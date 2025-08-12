@@ -7,7 +7,8 @@
 export default {
   props: {
     mode: {
-      type: String,
+      // type: String,
+      type: Object,
       required: false,
       default: null,
     },
@@ -47,9 +48,6 @@ a:hover,
 a:active,
 button:hover,
 button:active {
-  /* color: #00a88d;
-  background-color: #fff;
-  border-color: #00a88d; */
 }
 
 .outline {
@@ -76,6 +74,11 @@ button:active {
   color: var(--black-color);
 }
 
+.white:hover,
+.white:active {
+  background-color: var(--grey-color-1);
+}
+
 .black {
   border-color: var(--black-color);
   background-color: var(--black-color);
@@ -84,28 +87,13 @@ button:active {
 
 .black:hover,
 .black:active {
-  border: 1px solid var(--dark-color-2);
-  background-color: var(--dark-color-2);
+  border: 1px solid var(--black-color);
+  background-color: var(--main-color);
+  color: var(--black-color);
 }
 
-/* 
-.flat {
-  display: inline;
-  padding: 0;
-  color: #ffd700;
+.wide-button {
+  min-width: 150px;
+  padding: 0.8rem 3.5rem;
 }
-
-.flat:hover,
-.flat:active,
-.outline:hover,
-.outline:active {
-  color: #063;
-  background-color: #ddffee;
-  border-color: #063;
-}
-
-.arrow-signed::after {
-  content: " ->";
-  font-weight: bold;
-} */
 </style>
