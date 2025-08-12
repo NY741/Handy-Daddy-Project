@@ -4,12 +4,12 @@
     <nav class="navigation">
       <ul class="nav-list">
         <li class="special-list-item">000-00-00</li>
-        <li><a href="#" title="">Why us</a></li>
-        <li><a href="#" title="">Services</a></li>
-        <li><a href="#" title="">Appliances</a></li>
-        <li><a href="#" title="">Blog</a></li>
-        <li><a href="#" title="">Contact</a></li>
-        <li class="special-list-item"><a href="#" title="">Join us</a></li>
+        <li><router-link to="#" title="">Why us</router-link></li>
+        <li><router-link to="#" title="">Services</router-link></li>
+        <li><router-link to="#" title="">Appliances</router-link></li>
+        <li><router-link to="#" title="">Blog</router-link></li>
+        <li><router-link to="#" title="">Contact</router-link></li>
+        <li class="special-list-item"><router-link to="#" title="">Join us</router-link></li>
       </ul>
     </nav>
   </header>
@@ -23,19 +23,20 @@ export default {};
 header {
   position: relative;
   height: 101px;
-  padding: 30px 50px;
+  padding: 30px 160px;
   border: 1px solid #000;
   color: #fff;
   background-color: #000;
 }
 
 .nav-list {
-  margin-left: 25%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
-  border: 1px solid #FFD700;
-  font-size: 0.8rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4rem;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .nav-list a {
@@ -57,10 +58,9 @@ header {
 
 .logo {
   position: absolute;
-  left: 0;
+  left: 113px;
   bottom: -40%;
   width: 133px;
   height: 109px;
-  margin-left: 30px;
 }
 </style>

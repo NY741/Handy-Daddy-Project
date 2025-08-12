@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import MainContent from "./components/UI/MainContent.vue";
-import TheFooter from "./components/UI/TheFooter.vue";
-import TheHeader from "./components/UI/TheHeader.vue";
+import MainContent from "./components/layout/MainContent.vue";
+import TheFooter from "./components/layout/TheFooter.vue";
+import TheHeader from "./components/layout/TheHeader.vue";
 
 export default {
   components: {
@@ -25,6 +25,17 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --main-color: #ffd700;
+  --secondary-color: #fe6;
+  --white-color: #fff;
+  --black-color: #000;
+  --dark-color-1: #231f20;
+  --dark-color-2: #282828;
+  --dark-color-3: #4f4f4f;
+  --grey-color-1: #c4c4c4;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -37,6 +48,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #f8f8f8;
 }
 
 ul {
@@ -75,6 +87,16 @@ a {
 
 .block {
   display: block;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .bottom-block {
