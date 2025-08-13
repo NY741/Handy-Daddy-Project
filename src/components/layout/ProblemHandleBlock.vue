@@ -1,5 +1,5 @@
 <template>
-  <section class="flex-row">
+  <section :class="classes">
     <div class="left-block">
       <h4>Is something wrong?</h4>
       <h3>We'll fix it!</h3>
@@ -11,7 +11,9 @@
         <h3>(+000) 000 00 00</h3>
       </div>
       <div>
-        <base-button mode="black">Order Now</base-button>
+        <base-button :mode="mode === 'black' ? 'yellow' : 'black'"
+          >Order Now</base-button
+        >
       </div>
     </div>
   </section>
@@ -44,7 +46,6 @@ section > div {
   justify-content: space-between;
   align-items: center;
   height: 103px;
-  /* border: 1px solid red; */
   vertical-align: middle;
 }
 

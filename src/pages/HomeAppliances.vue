@@ -10,16 +10,19 @@
     >Home Appliances</base-header
   >
   <services-grid-block class="highlighted"> </services-grid-block>
+  <problem-handle-block mode="black"></problem-handle-block>
 </template>
 
 <script>
 import BackgroundWithTitle from "@/components/layout/BackgroundWithTitle.vue";
 import ServicesGridBlock from "@/components/layout/ServicesGridBlock.vue";
+import ProblemHandleBlock from "@/components/layout/ProblemHandleBlock.vue";
 
 export default {
   components: {
     BackgroundWithTitle,
     ServicesGridBlock,
+    ProblemHandleBlock,
   },
   data() {
     return {

@@ -153,14 +153,17 @@
       <base-button mode="white" link to="/">Back</base-button>
     </div>
   </base-margined-block>
+  <problem-handle-block></problem-handle-block>
 </template>
 
 <script>
 import BackgroundWithTitle from "@/components/layout/BackgroundWithTitle.vue";
+import ProblemHandleBlock from "@/components/layout/ProblemHandleBlock.vue";
 
 export default {
   components: {
     BackgroundWithTitle,
+    ProblemHandleBlock,
   },
   data() {
     return {
