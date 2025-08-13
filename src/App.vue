@@ -38,6 +38,7 @@ export default {
   --dark-color-4: #4f4f4f;
   --grey-color-1: #c4c4c4;
   --grey-color-2: rgba(141, 141, 141, 0.45);
+  --grey-color-3: #f0f0f0;
 }
 
 * {

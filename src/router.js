@@ -25,7 +25,7 @@ const router = createRouter({
       component: ApplianceInstallationService,
     },
     { path: "/home-appliances", component: HomeAppliances },
-    { path: "/refrigerator-repair", component: FreezerRepair },
+    { path: "/freezer-repair", component: FreezerRepair },
     { path: "/contact-us", component: ContactUs },
     { path: "/join-us", component: JoinUs },
     { path: "/privacy-policy", component: PrivacyPolicy },

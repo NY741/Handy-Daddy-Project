@@ -75,6 +75,10 @@ h3 {
 
 .black {
   color: var(--main-color);
-  background-color: var(--black-color);
+  background-color: var(--dark-color-1);
+}
+
+.black .left-block {
+  border-right-color: var(--main-color);
 }
 </style>

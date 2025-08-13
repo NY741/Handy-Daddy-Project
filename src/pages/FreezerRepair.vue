@@ -6,6 +6,7 @@
     imageOrder="2"
   >
   </background-with-title>
+  <base-header subText="we proudly provide these services">Freezer</base-header>
   <problem-handle-block></problem-handle-block>
 </template>
 

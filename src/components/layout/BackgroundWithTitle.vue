@@ -1,5 +1,5 @@
 <template>
-  <div class="background" :style="{ backgroundImage: `url(${bgUrl})` }">
+  <div :class="classes" :style="{ backgroundImage: `url(${bgUrl})` }">
     <section :class="height">
       <h1>
         <span
@@ -9,6 +9,9 @@
           >{{ title.text }}</span
         >
       </h1>
+      <base-header v-if="imageOrder === 3"
+        >Sorry, the page doesn't exist</base-header
+      >
       <div v-if="buttons" class="buttons flex-row">
         <base-button mode="yellow wide-button">Call now</base-button>
         <base-button mode="white wide-button">Order now</base-button>
@@ -21,6 +24,7 @@
 import bg1 from "../../assets/images/bg-main-01.png";
 import bg2 from "../../assets/images/bg-main-02.png";
 import bg3 from "../../assets/images/bg-main-03.png";
+import notFound from "../../assets/images/bg-not-found.png";
 
 export default {
   props: {
@@ -54,6 +58,9 @@ export default {
         {
           url: bg3,
         },
+        {
+          url: notFound,
+        },
       ],
     };
   },
@@ -61,13 +68,15 @@ export default {
     bgUrl() {
       return this.images[+this.imageOrder].url;
     },
+    classes() {
+      return "background " + (this.imageOrder === "3" ? "not-found" : "");
+    },
   },
 };
 </script>
 
 <style scoped>
 .background {
-  /* background-image: url("../../assets/images/bg-main-01.png"); */
   position: relative;
   background-position-y: 70%;
   text-align: center;
@@ -79,6 +88,20 @@ export default {
   inset: 0;
   background-color: #000000;
   opacity: 0.8;
+}
+
+.not-found {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--grey-color-3);
+}
+
+.not-found::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background-color: var(--grey-color-3); */
+  opacity: 0;
 }
 
 section {
@@ -107,6 +130,10 @@ span {
 
 .narrow {
   height: 374px;
+}
+
+.middle {
+  height: 458px;
 }
 
 .wide {
