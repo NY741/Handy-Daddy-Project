@@ -69,7 +69,7 @@ button:active {
 }
 
 .white {
-  border-color: var(--black-color);
+  border-color: var(--dark-color-2);
   background-color: var(--white-color);
   color: var(--black-color);
 }
@@ -80,7 +80,7 @@ button:active {
 }
 
 .black {
-  border-color: var(--black-color);
+  border-color: var(--main-color);
   background-color: var(--black-color);
   color: var(--main-color);
 }

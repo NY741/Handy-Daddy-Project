@@ -4,9 +4,7 @@
       <h4>Is something wrong?</h4>
       <h3>We'll fix it!</h3>
     </div>
-    <div>
-
-    </div>
+    <div></div>
     <div class="right-block flex-row">
       <div>
         <h4>Call now:</h4>
@@ -19,6 +17,17 @@
   </section>
 </template>
 
+<script>
+export default {
+  props: ["mode"],
+  computed: {
+    classes() {
+      return "flex-row " + this.mode;
+    },
+  },
+};
+</script>
+
 <style scoped>
 section {
   justify-content: space-between;
@@ -26,7 +35,7 @@ section {
   padding: 37px 80px;
   height: 177px;
   width: 100%;
-  margin: 60px 0 100px 0;
+  margin: 100px 0 60px 0;
   color: var(--black-color);
   background-color: var(--main-color);
 }
@@ -61,5 +70,10 @@ h3 {
   font-weight: 500;
   font-size: 30px;
   line-height: 24px;
+}
+
+.black {
+  color: var(--main-color);
+  background-color: var(--black-color);
 }
 </style>

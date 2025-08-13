@@ -15,7 +15,7 @@ import NotFound from "./pages/NotFound.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", component: TheFaq },
+    { path: "/", component: ApplianceInstallationService },
 
     { path: "/why-us", component: WhyUs },
     { path: "/lottery", component: TheLottery },

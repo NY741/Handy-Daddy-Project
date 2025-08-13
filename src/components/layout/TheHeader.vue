@@ -10,7 +10,7 @@
         <li><router-link to="#" title="">Blog</router-link></li>
         <li><router-link to="#" title="">Contact</router-link></li>
         <li class="special-list-item">
-          <router-link to="#" title="">Join us</router-link>
+          <base-button mode="black" to="#" title="">Join us</base-button>
         </li>
       </ul>
     </nav>
