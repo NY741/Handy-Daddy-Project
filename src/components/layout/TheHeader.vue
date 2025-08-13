@@ -4,11 +4,11 @@
     <nav class="navigation">
       <ul class="nav-list">
         <li class="special-list-item">000-00-00</li>
-        <li><router-link to="#" title="">Why us</router-link></li>
-        <li><router-link to="#" title="">Services</router-link></li>
-        <li><router-link to="#" title="">Appliances</router-link></li>
-        <li><router-link to="#" title="">Blog</router-link></li>
-        <li><router-link to="#" title="">Contact</router-link></li>
+        <li><router-link to="/why-us" title="">Why us</router-link></li>
+        <li><router-link to="/services" title="">Services</router-link></li>
+        <li><router-link to="/home-appliances" title="">Appliances</router-link></li>
+        <li><router-link to="/blog" title="">Blog</router-link></li>
+        <li><router-link to="/contact-us" title="">Contact</router-link></li>
         <li class="special-list-item">
           <base-button mode="black" to="#" title="">Join us</base-button>
         </li>

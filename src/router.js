@@ -11,12 +11,13 @@ import ApplianceRepairService from "./pages/ApplianceRepairService.vue";
 import TheLottery from "./pages/TheLottery.vue";
 import FreezerRepair from "./pages/FreezerRepair.vue";
 import NotFound from "./pages/NotFound.vue";
+import TheBlog from "./pages/TheBlog.vue";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: "/", component: ApplianceInstallationService },
-
+    { path: "/blog", component: TheBlog },
     { path: "/why-us", component: WhyUs },
     { path: "/lottery", component: TheLottery },
     { path: "/appliance-repair-service", component: ApplianceRepairService },

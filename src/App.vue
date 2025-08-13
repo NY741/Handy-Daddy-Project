@@ -83,7 +83,9 @@ ul {
 }
 
 a {
+  color: var(--black-color);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .success {

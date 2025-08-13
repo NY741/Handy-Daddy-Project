@@ -1,45 +1,67 @@
 <template>
   <div :class="classes">
     <div>
-      <img src="../../assets/images/services-icons/washer.svg" alt="washer" />
-      <h6>Washer</h6>
+      <router-link to="/appliance-repair-service">
+        <img src="../../assets/images/services-icons/washer.svg" alt="washer" />
+        <h6>Washer</h6>
+      </router-link>
     </div>
     <div>
-      <img src="../../assets/images/services-icons/dryer.svg" alt="dryer" />
-      <h6>Dryer</h6>
+      <router-link to="/appliance-repair-service">
+        <img src="../../assets/images/services-icons/dryer.svg" alt="dryer" />
+        <h6>Dryer</h6>
+      </router-link>
     </div>
     <div>
-      <img src="../../assets/images/services-icons/freezer.svg" alt="freezer" />
-      <h6>Freezer</h6>
+      <router-link to="/appliance-repair-service">
+        <img
+          src="../../assets/images/services-icons/freezer.svg"
+          alt="freezer"
+        />
+        <h6>Freezer</h6>
+      </router-link>
     </div>
     <div>
-      <img
-        src="../../assets/images/services-icons/refrigerator.svg"
-        alt="refrigerator"
-      />
-      <h6>Refrigerator</h6>
+      <router-link to="/appliance-repair-service">
+        <img
+          src="../../assets/images/services-icons/refrigerator.svg"
+          alt="refrigerator"
+        />
+        <h6>Refrigerator</h6>
+      </router-link>
     </div>
     <div>
-      <img
-        src="../../assets/images/services-icons/oven-stove.svg"
-        alt="oven-stove"
-      />
-      <h6>Oven, Stove</h6>
+      <router-link to="/appliance-repair-service">
+        <img
+          src="../../assets/images/services-icons/oven-stove.svg"
+          alt="oven-stove"
+        />
+        <h6>Oven, Stove</h6>
+      </router-link>
     </div>
     <div class="highlighted">
-      <img src="../../assets/images/services-icons/cooktop.svg" alt="cooktop" />
-      <h6>Cooktop</h6>
+      <router-link to="/appliance-repair-service">
+        <img
+          src="../../assets/images/services-icons/cooktop.svg"
+          alt="cooktop"
+        />
+        <h6>Cooktop</h6>
+      </router-link>
     </div>
     <div>
-      <img src="../../assets/images/services-icons/ranges.svg" alt="ranges" />
-      <h6>Ranges</h6>
+      <router-link to="/appliance-repair-service">
+        <img src="../../assets/images/services-icons/ranges.svg" alt="ranges" />
+        <h6>Ranges</h6>
+      </router-link>
     </div>
     <div>
-      <img
-        src="../../assets/images/services-icons/dishwasher.svg"
-        alt="dishwasher"
-      />
-      <h6>Dishwasher</h6>
+      <router-link to="/appliance-repair-service">
+        <img
+          src="../../assets/images/services-icons/dishwasher.svg"
+          alt="dishwasher"
+        />
+        <h6>Dishwasher</h6>
+      </router-link>
     </div>
   </div>
   <div class="centered margined">
@@ -90,13 +112,20 @@ export default {
   border-color: var(--main-color);
 }
 
-.services-block img {
-  width: 36%;
-  height: 36%;
+a {
+  display: inline-block;
+  text-align: center;
+}
+
+.services-block a img {
+  /* width: 50%;
+  height: 50%; */
+  width: 40px;
+  height: 50px;
 }
 
 h6 {
-  margin: 20px 0 0 0;
+  margin: 15px 0 0 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
